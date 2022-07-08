@@ -51,6 +51,9 @@ function moveHorses(){
             alert(`${colours[j]} won the race`)
             resetRace()
             placeBet()
+        }
+    }
+}
 let j=0
 while(j<numHorse){
 
@@ -75,8 +78,6 @@ function resetRace(){
     }
 }
 
-requestAnimationFrame(moveHorses)
-
 function moveHorses(){
     let i=0
 
@@ -96,11 +97,11 @@ function moveHorses(){
     }
     requestAnimationFrame(moveHorses)
 }
-        }
+        
         i++
-    }
-    requestAnimationFrame(moveHorses)
-}
+
+requestAnimationFrame(moveHorses)
+
 
 function displayBet(i){
     if (bet != colours[i]){
